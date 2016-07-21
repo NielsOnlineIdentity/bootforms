@@ -18,7 +18,7 @@ class BootForm
         return $this->builder->open();
     }
 
-    public function openHorizontal($columnSizes)
+    public function openHorizontal($columnSizes = ['lg' => [2, 10]])
     {
         $this->horizontalFormBuilder->setColumnSizes($columnSizes);
         $this->builder = $this->horizontalFormBuilder;
